@@ -1,0 +1,565 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+.header-container {
+    border-bottom: 20px solid #8e062b;
+}
+
+.footer-container,
+.main aside {
+    border-top: 20px solid ##8e062b;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+    background: #b20836;
+}
+
+.title {
+    color: white;
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.container {
+	padding: 80px;
+}
+
+/* ===============
+    ALL: Menu
+   =============== */
+
+.bt-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	border-width: 0px;
+	border-style: solid;
+	border-color: #333;
+	background-color: rgba(0,0,0,0);
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
+	transition: border-width 0.3s, background-color 0.3s, height 0s 0.3s;
+}
+
+.bt-menu.bt-menu-open {
+	height: 100%;
+	border-width: 0px 0px 50px 150px;
+	background-color: rgba(0,0,0,0.3);
+	-webkit-transition: border-width 0.3s, background-color 0.3s;
+	transition: border-width 0.3s, background-color 0.3s;
+}
+
+.bt-overlay {
+	position: absolute;
+	width: 100%;
+}
+
+.bt-menu-open .bt-overlay {
+	height: 100%;
+}
+
+.bt-menu-trigger {
+	position: fixed;
+	top: 10px;
+	left: 20px;
+	z-index: 100;
+	display: block;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}
+
+.bt-menu-trigger span {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 8%;
+	background-color: #fff;
+	font-size: 0px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-transition: background-color 0.3s;
+	transition: background-color 0.3s;
+}
+
+.bt-menu-trigger span:before,
+.bt-menu-trigger span:after {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	content: '';
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.bt-menu-trigger span:before {
+	-webkit-transform: translateY(-250%);
+	transform: translateY(-250%);
+}
+
+.bt-menu-trigger span:after {
+	-webkit-transform: translateY(250%);
+	transform: translateY(250%);
+}
+
+.bt-menu-open .bt-menu-trigger span:before {
+	-webkit-transform: translateY(-300%);
+	transform: translateY(-300%);
+}
+
+.bt-menu-open .bt-menu-trigger span:after {
+	-webkit-transform: translateY(300%);
+	transform: translateY(300%);
+}
+
+.bt-menu ul {
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.bt-menu ul:first-of-type {
+	top: 75px;
+	left: 0;
+}
+
+.bt-menu ul:nth-of-type(2) {
+	right: 0;
+	bottom: 0;
+}
+
+.bt-menu ul li,
+.bt-menu ul li a {
+	display: block;
+}
+
+.bt-menu ul:nth-of-type(2) li {
+	float: left;
+	font-size: 0px;
+}
+
+.bt-menu ul li {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s, visibility 0s 0.3s;
+	transition: transform 0.3s, opacity 0.2s, visibility 0s 0.3s;
+}
+
+.bt-menu.bt-menu-open ul:first-of-type li,
+.bt-menu.bt-menu-open ul:nth-of-type(2) li {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s 0.1s;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+/* First menu */
+.bt-menu ul:first-of-type li {
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	-webkit-transform: translate3d(-100%,50%,0);
+	transform: translate3d(-100%,50%,0);
+}
+
+.bt-menu.bt-menu-open ul:first-of-type li {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+/* Second menu */
+.bt-menu ul:nth-of-type(2) li {
+	width: 60px;
+	height: 50px;
+	line-height: 50px;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+.bt-menu.bt-menu-open ul:nth-of-type(2) li:first-child { 
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.bt-menu.bt-menu-open ul:nth-of-type(2) li:nth-child(2) { 
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.bt-menu.bt-menu-open ul:nth-of-type(2) li:nth-child(3) { 
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+}
+
+.bt-menu.bt-menu-open ul:nth-of-type(2) li:nth-child(4) {
+	-webkit-transition-delay: 0.4s;
+	transition-delay: 0.4s;
+}
+
+.bt-menu.bt-menu-open ul:nth-of-type(2) li {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.bt-menu ul li a {
+	display: block;
+	outline: none;
+	text-decoration: none;
+}
+
+.bt-menu ul:first-of-type li a {
+	padding: 0 20px;
+	box-shadow: inset 0 1px rgba(0,0,0,0.2);
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1em;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.bt-menu ul:first-of-type li:last-child a {
+	box-shadow: inset 0 1px rgba(0,0,0,0.2), inset 0 -1px rgba(0,0,0,0.2);
+}
+
+.bt-menu ul:nth-of-type(2) li a {
+	color: transparent;
+	text-align: center;
+	font-size: 0px;
+}
+
+.bt-menu ul li a:before {
+	color: #fff;
+	font-size: 24px;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.bt-menu ul:first-of-type li a:hover,
+.bt-menu ul:first-of-type li a:focus,
+.bt-menu ul li a:hover:before,
+.bt-menu ul li a:focus:before {
+	color: #1abc9c;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+	
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
