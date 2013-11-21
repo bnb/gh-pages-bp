@@ -139,8 +139,10 @@ body {
    ========================================================================== */
 
 .container {
-	padding: 80px;
+	padding: 0;
 }
+
+
 
 /* ===============
     ALL: Menu
@@ -391,7 +393,31 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+/* ====================
+    WIDE: Header
+   ==================== */
+	.header-container {
+		height: 25em;
+	}
+	header hgroup {
+	}
+	
+	header hgroup h1 {
+		font-size: 9.5em;
+		font-family: cabin-condensed, sans-serif;
+	}
 
+	header hgroup h4 {
+		font-size: 2em;
+	}
+	
+	.ghicon i {
+		font-size: 10em;
+	}
+
+	.ghicon {
+		float: left;
+	}
 /* ====================
     WIDE: CSS3 Effects
    ==================== */
