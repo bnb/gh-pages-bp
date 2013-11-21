@@ -64,8 +64,9 @@ textarea {
 }
 
 
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+/* ===== Initializr/gh-pages-bp Styles ==================================================
+	Initializr Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+	gh-pages-bp Author: &! (bitandbang) - personal URL soon.
    ========================================================================== */
 
 body {
@@ -138,11 +139,133 @@ body {
    Author's custom styles
    ========================================================================== */
 
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+	
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+	
+/* ====================
+    WIDE: Header
+   ==================== */
+	.header-container {
+		height: 25em;
+	}
+	header hgroup {
+		margin-top: 8%;
+	}
+	/* Heading animation. Remove lines 432 through 443 if you don't want it. Also, cabin-condensed is the Adobe web fonts font and is completely editable.*/
+	header hgroup h1 {
+		font-size: 9.5em;
+		font-family: cabin-condensed, sans-serif;
+		-webkit-animation-duration: 1s;
+		   -moz-animation-duration: 1s;
+			 -o-animation-duration: 1s;
+				animation-duration: 1s;
+		-webkit-animation-delay: 0;
+		   -moz-animation-delay: 0;
+			 -o-animation-delay: 0;
+				animation-delay: 0;
+		-webkit-animation-iteration-count: 1;
+		   -moz-animation-iteration-count: 1;
+			 -o-animation-iteration-count: 1;
+				animation-iteration-count: 1;
+	}
+
+
+
+	header hgroup h4 {
+		font-size: 2em;
+		margin-top: 50px;
+		margin-left: 185px;
+	}
+	
+	.ghicon i {
+		font-size: 10em;
+	}
+
+	.ghicon {
+		float: left;
+	}
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   General
+   ========================================================================== */
+/* ===============
+    Fix the fucking useragent stylesheets
+   =============== */
+h1, h2, h3, h4 {
+	display: block;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+}
+
+/* ===============
+    General: General
+   =============== */
+
 .container {
 	padding: 0;
 }
-
-
 
 /* ===============
     ALL: Menu
@@ -198,7 +321,7 @@ body {
 	display: block;
 	width: 100%;
 	height: 8%;
-	background-color: #fff;
+	background-color: #e8e8e8;
 	font-size: 0px;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -216,7 +339,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #fff;
+	background: #e8e8e8;
 	content: '';
 	-webkit-transition: -webkit-transform 0.3s;
 	transition: transform 0.3s;
@@ -373,89 +496,16 @@ body {
 	color: #1abc9c;
 }
 
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 480px) {
+.bt-menu i {
+	color: #fff;
+	font-size: 25px;
+}
+.bt-menu a {
 	
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
+	padding-top: 9px;
+	overflow: hidden;
 }
 
-@media only screen and (min-width: 768px) {
-/* ====================
-    WIDE: Header
-   ==================== */
-	.header-container {
-		height: 25em;
-	}
-	header hgroup {
-	}
-	
-	header hgroup h1 {
-		font-size: 9.5em;
-		font-family: cabin-condensed, sans-serif;
-	}
-
-	header hgroup h4 {
-		font-size: 2em;
-	}
-	
-	.ghicon i {
-		font-size: 10em;
-	}
-
-	.ghicon {
-		float: left;
-	}
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-    .header-container,
-    .main aside {
-        -webkit-box-shadow: 0 5px 10px #aaa;
-           -moz-box-shadow: 0 5px 10px #aaa;
-                box-shadow: 0 5px 10px #aaa;
-    }
-
-
-/* ============
-    WIDE: Main
-   ============ */
-
-    .main article {
-        float: left;
-        width: 57%;
-    }
-
-    .main aside {
-        float: right;
-        width: 28%;
-    }
-}
-
-@media only screen and (min-width: 1140px) {
-
-/* ===============
-    Maximal Width
-   =============== */
-
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
-}
 
 /* ==========================================================================
    Helper classes
