@@ -12,9 +12,9 @@
 		
 		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/animate.css">
-		<link rel="stylesheet" href="css/prism.css">
+        <link rel="stylesheet" href="css/responsive-nav.css">
 		<link rel="stylesheet" href="css/extras.css">
-		
+        
         <link rel="stylesheet" href="css/normalize.min.css">
 		<link rel="stylesheet" href="css/main.css">
 		
@@ -22,30 +22,23 @@
     </head>
     <body>
 		<div class="container">
+        <nav class="nav-collapse">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+	   </nav>
 			<div class="header-container">
 				<header class="wrapper clearfix">
 					<hgroup>
-						<h1 class="animated fadeInDownBig"><i class="fa fa-github-alt"></i> gh-pages-bp</h1>
+						<h1 class="animated fadeInDownBig"><i class="fa fa-github-alt"></i> <span class="gh">gh-</span><span class="pages">pages</span><span class="bp">-bp</span></h1>
 						<h4 class="animated fadeInUp">A responsive, beautiful boilerplate for your project's gh-pages page.</h4>
 					</hgroup>
 					<br>
 				</header>
 			</div>
-			<nav id="bt-menu" class="bt-menu bt-menu-close">
-				<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
-				<ul>
-					<li><a href="#">link 1</a></li>
-					<li><a href="#">link 2</a></li>
-					<li><a href="#">link 3</a></li>
-					<li><a href="#">link 4</a></li>
-					<li><a href="#">link 5</a></li>
-				</ul>
-				<ul>
-					<li><a href="http://twitter.com/ghpagesbp"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="https://ghpagesbp.cupcake.io"><i class="fa fa-chevron-up"></i></a></li>
-					<li><a href="https://github.com/bnb/gh-pages-bp"><i class="fa fa-github-alt"></i></a></li>
-				</ul>
-			</nav>
 			<div class="main-container">
 				<div class="main wrapper clearfix">
 	
@@ -55,13 +48,6 @@
 							<p>Code highlighting is obviously important for gh-pages sites because we need to display code as examples of how to (or not to) do specific things with out projects.</p>
 							<p>gh-pages-bp comes with Prism for code highlighting. By default, gh-pages=bp comes with the standard theme, as well as syntax highlighting for markup, CSS (plus CSS Extras), JavaScript, PHP (plus PHP Extras), CoffeeScript, SASS, SQL, and Ruby. If the language you want to use isn't on this list, check out the <a href="http://prismjs.com/download.html">Prism.js download page</a> where you can customize Prism to fit your needs.</p>
 							<p>Here's an example code block (it's from the Node.js documentation, with JavaScript highlighting): </p>
-							<pre><code class="language-javascript">console.log('a starting');
-exports.done = false;
-var b = require('./b.js');
-console.log('in a, b.done = %j', b.done);
-exports.done = true;
-console.log('a done');
-							</code></pre>
 						</header>
 						<section>
 							<h2>article section h2</h2>
@@ -96,18 +82,25 @@ console.log('a done');
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
         <script src="js/main.js"></script>
-		<script src="js/classie.js"></script>
-		<script src="js/borderMenu.js"></script>
+		<script src="js/responsive-nav.min.js"></script>
 		
 		<!-- Extra JavaScript -->
-		<script src="http://use.edgefonts.net/cabin-condensed.js"></script>
-		<script src="js/prism.js"></script>
-
+        <script src="http://use.edgefonts.net/cabin-condensed.js"></script>
+        
         <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src='//www.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
+            var nav = responsiveNav(".nav-collapse");
+            
+            var nav = 
+                responsiveNav(".nav-collapse", { // Selector
+                animate: true, // Boolean: Use CSS3 transitions, true or false
+                transition: 250, // Integer: Speed of the transition, in milliseconds
+                label: "Menu", // String: Label for the navigation toggle
+                insert: "after", // String: Insert the toggle before or after the navigation
+                customToggle: "", // Selector: Specify the ID of a custom toggle
+                openPos: "relative", // String: Position of the opened nav, relative or static
+                navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
+                jsClass: "js", // String: 'JS enabled' class which is added to <html> element
+	       });
         </script>
     </body>
 </html>

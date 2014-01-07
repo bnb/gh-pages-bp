@@ -86,6 +86,22 @@ body {
     border-bottom: 20px solid #8e062b;
 }
 
+header hgroup h1 {
+    font-family: cabin-condensed, sans-serif;
+    -webkit-animation-duration: 1s;
+       -moz-animation-duration: 1s;
+         -o-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-delay: 0;
+       -moz-animation-delay: 0;
+         -o-animation-delay: 0;
+            animation-delay: 0;
+    -webkit-animation-iteration-count: 1;
+       -moz-animation-iteration-count: 1;
+         -o-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+}
+
 .footer-container,
 .main aside {
     border-top: 20px solid ##8e062b;
@@ -100,6 +116,27 @@ body {
 .title {
     color: white;
 }
+
+/* ==============
+    MOBILE: Header
+   ============== */
+
+header hgroup {
+    
+}
+
+header hgroup h1 {
+    font-size: 6em;
+    line-height: 100%;
+        text-align: center;
+}
+
+.gh, .pages, .bp {
+    display: block;
+
+}
+
+
 
 /* ==============
     MOBILE: Menu
@@ -166,29 +203,9 @@ body {
 /* ====================
     WIDE: Header
    ==================== */
-	.header-container {
-		height: 25em;
-	}
-	header hgroup {
-		margin-top: 8%;
-	}
+
 	/* Heading animation. Remove lines 432 through 443 if you don't want it. Also, cabin-condensed is the Adobe web fonts font and is completely editable.*/
-	header hgroup h1 {
-		font-size: 9.5em;
-		font-family: cabin-condensed, sans-serif;
-		-webkit-animation-duration: 1s;
-		   -moz-animation-duration: 1s;
-			 -o-animation-duration: 1s;
-				animation-duration: 1s;
-		-webkit-animation-delay: 0;
-		   -moz-animation-delay: 0;
-			 -o-animation-delay: 0;
-				animation-delay: 0;
-		-webkit-animation-iteration-count: 1;
-		   -moz-animation-iteration-count: 1;
-			 -o-animation-iteration-count: 1;
-				animation-iteration-count: 1;
-	}
+
 
 
 
@@ -353,157 +370,6 @@ h1, h2, h3, h4 {
 .bt-menu-trigger span:after {
 	-webkit-transform: translateY(250%);
 	transform: translateY(250%);
-}
-
-.bt-menu-open .bt-menu-trigger span:before {
-	-webkit-transform: translateY(-300%);
-	transform: translateY(-300%);
-}
-
-.bt-menu-open .bt-menu-trigger span:after {
-	-webkit-transform: translateY(300%);
-	transform: translateY(300%);
-}
-
-.bt-menu ul {
-	position: fixed;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-.bt-menu ul:first-of-type {
-	top: 75px;
-	left: 0;
-}
-
-.bt-menu ul:nth-of-type(2) {
-	right: 0;
-	bottom: 0;
-}
-
-.bt-menu ul li,
-.bt-menu ul li a {
-	display: block;
-}
-
-.bt-menu ul:nth-of-type(2) li {
-	float: left;
-	font-size: 0px;
-}
-
-.bt-menu ul li {
-	visibility: hidden;
-	opacity: 0;
-	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s, visibility 0s 0.3s;
-	transition: transform 0.3s, opacity 0.2s, visibility 0s 0.3s;
-}
-
-.bt-menu.bt-menu-open ul:first-of-type li,
-.bt-menu.bt-menu-open ul:nth-of-type(2) li {
-	visibility: visible;
-	opacity: 1;
-	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s 0.1s;
-	transition: transform 0.3s, opacity 0.3s;
-}
-
-/* First menu */
-.bt-menu ul:first-of-type li {
-	width: 150px;
-	height: 50px;
-	line-height: 50px;
-	-webkit-transform: translate3d(-100%,50%,0);
-	transform: translate3d(-100%,50%,0);
-}
-
-.bt-menu.bt-menu-open ul:first-of-type li {
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
-
-/* Second menu */
-.bt-menu ul:nth-of-type(2) li {
-	width: 60px;
-	height: 50px;
-	line-height: 50px;
-	-webkit-transform: scale(0);
-	transform: scale(0);
-}
-
-.bt-menu.bt-menu-open ul:nth-of-type(2) li:first-child { 
-	-webkit-transition-delay: 0.1s;
-	transition-delay: 0.1s;
-}
-
-.bt-menu.bt-menu-open ul:nth-of-type(2) li:nth-child(2) { 
-	-webkit-transition-delay: 0.2s;
-	transition-delay: 0.2s;
-}
-
-.bt-menu.bt-menu-open ul:nth-of-type(2) li:nth-child(3) { 
-	-webkit-transition-delay: 0.3s;
-	transition-delay: 0.3s;
-}
-
-.bt-menu.bt-menu-open ul:nth-of-type(2) li:nth-child(4) {
-	-webkit-transition-delay: 0.4s;
-	transition-delay: 0.4s;
-}
-
-.bt-menu.bt-menu-open ul:nth-of-type(2) li {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-}
-
-.bt-menu ul li a {
-	display: block;
-	outline: none;
-	text-decoration: none;
-}
-
-.bt-menu ul:first-of-type li a {
-	padding: 0 20px;
-	box-shadow: inset 0 1px rgba(0,0,0,0.2);
-	color: #fff;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-size: 1em;
-	-webkit-transition: color 0.2s;
-	transition: color 0.2s;
-}
-
-.bt-menu ul:first-of-type li:last-child a {
-	box-shadow: inset 0 1px rgba(0,0,0,0.2), inset 0 -1px rgba(0,0,0,0.2);
-}
-
-.bt-menu ul:nth-of-type(2) li a {
-	color: transparent;
-	text-align: center;
-	font-size: 0px;
-}
-
-.bt-menu ul li a:before {
-	color: #fff;
-	font-size: 24px;
-	-webkit-transition: color 0.2s;
-	transition: color 0.2s;
-}
-
-.bt-menu ul:first-of-type li a:hover,
-.bt-menu ul:first-of-type li a:focus,
-.bt-menu ul li a:hover:before,
-.bt-menu ul li a:focus:before {
-	color: #1abc9c;
-}
-
-.bt-menu i {
-	color: #fff;
-	font-size: 25px;
-}
-.bt-menu a {
-	
-	padding-top: 9px;
-	overflow: hidden;
 }
 
 
