@@ -78,69 +78,11 @@ body {
     margin: 0 5%;
 }
 
-/* ===================
-    ALL: Orange Theme
-   =================== */
-
-.header-container {
-    border-bottom: 20px solid #8e062b;
-}
-
-header hgroup h1 {
-    font-family: cabin-condensed, sans-serif;
-    -webkit-animation-duration: 1s;
-       -moz-animation-duration: 1s;
-         -o-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-delay: 0;
-       -moz-animation-delay: 0;
-         -o-animation-delay: 0;
-            animation-delay: 0;
-    -webkit-animation-iteration-count: 1;
-       -moz-animation-iteration-count: 1;
-         -o-animation-iteration-count: 1;
-            animation-iteration-count: 1;
-}
-
-.footer-container,
-.main aside {
-    border-top: 20px solid ##8e062b;
-}
-
-.header-container,
-.footer-container,
-.main aside {
-    background: #b20836;
-}
-
-.title {
-    color: white;
-}
 
 /* ==============
     MOBILE: Header
    ============== */
 
-header hgroup {
-    
-}
-
-header hgroup h1 {
-    font-size: 6em;
-    line-height: 100%;
-        text-align: center;
-}
-
-.gh, .pages, .bp {
-    display: block;
-
-}
-
-
-
-/* ==============
-    MOBILE: Menu
-   ============== */
 
 /* ==============
     MOBILE: Main
@@ -176,6 +118,22 @@ header hgroup h1 {
    Author's custom styles
    ========================================================================== */
 
+div hgroup {
+    font-size: 2.5rem
+}
+
+div hgroup h1 {
+    font-family: cabin-condensed, sans-serif;
+    display:inline;
+}
+
+header.masthead {
+    padding-bottom: 1em
+}
+
+header.masthead div * {
+    padding-top: 0.5em;
+}
 
 
 
@@ -207,14 +165,6 @@ header hgroup h1 {
 	/* Heading animation. Remove lines 432 through 443 if you don't want it. Also, cabin-condensed is the Adobe web fonts font and is completely editable.*/
 
 
-
-
-	header hgroup h4 {
-		font-size: 2em;
-		margin-top: 50px;
-		margin-left: 185px;
-	}
-	
 	.ghicon i {
 		font-size: 10em;
 	}
@@ -267,7 +217,7 @@ header hgroup h1 {
 /* ===============
     Fix the fucking useragent stylesheets
    =============== */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
 	display: block;
 	-webkit-margin-before: 0em;
 	-webkit-margin-after: 0em;

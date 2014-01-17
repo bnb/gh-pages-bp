@@ -10,9 +10,8 @@
         <meta name="description" content="gh-pages-bp: A boilerplate for your project's gh-pages page.">
         <meta name="viewport" content="width=device-width">
 		
-		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/responsive-nav.css">
+        <link rel="stylesheet" href="css/semantic.min.css">
 		<link rel="stylesheet" href="css/extras.css">
         
         <link rel="stylesheet" href="css/normalize.min.css">
@@ -21,32 +20,31 @@
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
-		<div class="container">
-        <nav class="nav-collapse">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-	   </nav>
-			<div class="header-container">
-				<header class="wrapper clearfix">
+            <header class="ui red inverted page grid masthead segment">
+				<div class="center aligned column">
 					<hgroup>
-						<h1 class="animated fadeInDownBig"><i class="fa fa-github-alt"></i> <span class="gh">gh-</span><span class="pages">pages</span><span class="bp">-bp</span></h1>
-						<h4 class="animated fadeInUp">A responsive, beautiful boilerplate for your project's gh-pages page.</h4>
+						<h1 class="animated fadeInDownBig ui center aligned huge header"><i class="icon github header-icon"></i></h1><h1 class="animated fadeInDownBig ui center aligned huge header">gh-pages-bp</h1>
+						<h5 class="animated fadeInUp ui">A responsive, beautiful boilerplate for your project's gh-pages page.</h5>
 					</hgroup>
+                    <div class="ui buttons">
+                        <div class="ui labeled icon button">
+                            <i class="github icon"></i>
+                            Download
+                        </div>
+                        <div class="or"></div>
+                        <div class="ui black button">Learn More</div>
+                    </div>
 					<br>
-				</header>
-			</div>
+				</div>
+			</header>
 			<div class="main-container">
 				<div class="main wrapper clearfix">
 	
 					<article>
 						<header>
 							<h1>Code Highlighting</h1>
-							<p>Code highlighting is obviously important for gh-pages sites because we need to display code as examples of how to (or not to) do specific things with out projects.</p>
-							<p>gh-pages-bp comes with Prism for code highlighting. By default, gh-pages=bp comes with the standard theme, as well as syntax highlighting for markup, CSS (plus CSS Extras), JavaScript, PHP (plus PHP Extras), CoffeeScript, SASS, SQL, and Ruby. If the language you want to use isn't on this list, check out the <a href="http://prismjs.com/download.html">Prism.js download page</a> where you can customize Prism to fit your needs.</p>
+							<p>Code highlighting is obviously important for most gh-pages sites because we developers need to display code as examples of how to (or how <em>not</em> to) do specific things with our products.</p>
+							<p>gh-pages-bp comes with Prettigy for code highlighting. By default, gh-pages-bp comes with the standard theme, as well as syntax highlighting for markup, CSS (plus CSS Extras), JavaScript, PHP (plus PHP Extras), CoffeeScript, SASS, SQL, and Ruby. If the language you want to use isn't on this list, check out the <a href="http://prismjs.com/download.html">Prism.js download page</a> where you can customize Prism to fit your needs.</p>
 							<p>Here's an example code block (it's from the Node.js documentation, with JavaScript highlighting): </p>
 						</header>
 						<section>
@@ -82,25 +80,9 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
         <script src="js/main.js"></script>
-		<script src="js/responsive-nav.min.js"></script>
+		<script src="js/semantic.min.js"></script>
 		
 		<!-- Extra JavaScript -->
         <script src="http://use.edgefonts.net/cabin-condensed.js"></script>
-        
-        <script>
-            var nav = responsiveNav(".nav-collapse");
-            
-            var nav = 
-                responsiveNav(".nav-collapse", { // Selector
-                animate: true, // Boolean: Use CSS3 transitions, true or false
-                transition: 250, // Integer: Speed of the transition, in milliseconds
-                label: "Menu", // String: Label for the navigation toggle
-                insert: "after", // String: Insert the toggle before or after the navigation
-                customToggle: "", // Selector: Specify the ID of a custom toggle
-                openPos: "relative", // String: Position of the opened nav, relative or static
-                navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
-                jsClass: "js", // String: 'JS enabled' class which is added to <html> element
-	       });
-        </script>
     </body>
 </html>
