@@ -73,9 +73,46 @@ body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
 }
 
+header.navbar {
+    background: #111;
+    color: #e0dddd;
+    padding: 2em 1em 2em 1em;
+    margin: 0;
+}
+
+header.navbar h3{
+    margin: 0;
+}
+
 #welcome h1 {
     text-align: center;
 }
+
+.button {
+    border-radius: 5px;
+    padding: 0.1em 0.2em;
+}
+
+.red {
+    background-color: #de5555;
+    color: #e0dddd;
+}
+
+.blue {
+    background-color: #5594de;
+    color: #e0dddd;
+}
+
+.green {
+    background-color: #75de55;
+    color: #e0dddd;
+}
+
+.purple {
+    background-color: #a111a5;
+    color: #e0dddd;
+}
+
 
 
 

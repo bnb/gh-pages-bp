@@ -20,10 +20,18 @@
         <div id="container">
             <header class="navbar">
             <h3>gh-pages-bp</h3>
+            <nav>
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>GitHub</a></li>
+                    <li><a>Twitter</a></li>
+                </ul>
+            </nav>
             </header>
             <section id="welcome">
                 <hgroup>
-                    <h1 id="topHeader xl-1 l-1 md-1 sm-1 xs-1">gh-pages-bp</h1>
+                    <h1 id="topHeader">gh-pages-bp</h1>
                     <h4>A responsive, beautiful boilerplate for your project's gh-pages page.</h4>
                 </hgroup>
 
@@ -85,12 +93,12 @@
 			</div>
 		</div>
 
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"><\/script>
+        <script src="./js/vendor/jquery-2.1.1.min.js"><\/script>
         <script src="js/main.js"></script>
 
- 	<script src="jquery.fittext.js"></script>
-	<script type="text/javascript">
-		$("#topHeader").fitText();
-    </script>
+        <script src="js/jquery.fittext.js"></script>
+        <script type="text/javascript">
+            jQuery("#topHeader").fitText();
+        </script>
     </body>
 </html>
