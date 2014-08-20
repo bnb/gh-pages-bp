@@ -8,19 +8,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>gh-pages-bp: A boilerplate for Github Pages</title>
         <meta name="description" content="gh-pages-bp: A boilerplate for your project's gh-pages page.">
-        <meta name="viewport" content="width=device-width">
-		
-		<link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/semantic.min.css">
-		<link rel="stylesheet" href="css/extras.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
+        <link rel="stylesheet" href="css/flexible.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+
         <link rel="stylesheet" href="css/normalize.min.css">
-		<link rel="stylesheet" href="css/main.css">
-		
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-            <header class="ui red inverted page grid masthead segment">
+        <div id="container">
+            <header class="navbar"></header>
+            <header>
+                <hgroup>
+                    <h1 id="topHeader">gh-pages-bp</h1>
+                </hgroup>
+
+            </header>
+            <!-- <header class="ui red inverted page grid masthead segment">
 				<div class="center aligned column">
 					<hgroup>
 						<h1 class="animated fadeInDownBig ui center aligned huge header"><i class="icon github header-icon"></i></h1><h1 class="animated fadeInDownBig ui center aligned huge header">gh-pages-bp</h1>
@@ -37,6 +42,7 @@
 					<br>
 				</div>
 			</header>
+            -->
 			<div class="main-container">
 				<div class="main wrapper clearfix">
 	
@@ -76,13 +82,13 @@
 			</div>
 		</div>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js"><\/script>')</script>
         <script src="js/main.js"></script>
-		<script src="js/semantic.min.js"></script>
-		
-		<!-- Extra JavaScript -->
-        <script src="http://use.edgefonts.net/cabin-condensed.js"></script>
+
+ 	<script src="jquery.fittext.js"></script>
+	<script type="text/javascript">
+		$("#topHeader").fitText();
+    </script>
     </body>
 </html>
