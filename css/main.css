@@ -73,6 +73,11 @@ body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
 }
 
+#welcome h1 {
+    text-align: center;
+}
+
+
 
 /* =======================================================
     Media Queries via Flexible.gs
