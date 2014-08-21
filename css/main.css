@@ -73,6 +73,13 @@ body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
 }
 
+.stuck {
+    position: fixed;
+}
+
+.oneHundred {
+    width: 100%;
+}
 header.navbar {
     background: #111;
     color: #e0dddd;
@@ -81,13 +88,36 @@ header.navbar {
 }
 
 header.navbar h3{
+    display: inline;
     margin: 0;
 }
 
+header.navbar nav {
+    display: inline;
+    margin: 0;
+    float: right;
+}
+
+header.navbar ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+header.navbar li {
+    display: inline;
+    padding-right: 10px;
+}
+
 #welcome h1 {
+    font-size: 2rem;
     text-align: center;
 }
 
+#welcome h4 {
+    font-size: 2.4rem;
+    margin: 0 auto;
+}
 .button {
     border-radius: 5px;
     padding: 0.1em 0.2em;
@@ -95,22 +125,30 @@ header.navbar h3{
 
 .red {
     background-color: #de5555;
+    border: 1px solid #fd756f;
     color: #e0dddd;
 }
 
 .blue {
     background-color: #5594de;
+    border: 1px solid #94d8fa;
     color: #e0dddd;
 }
 
 .green {
     background-color: #75de55;
+    border: 1px solid #79f8b4;
     color: #e0dddd;
 }
 
 .purple {
     background-color: #a111a5;
+    border: 1px solid #442565;
     color: #e0dddd;
+}
+
+.tranny {
+    
 }
 
 

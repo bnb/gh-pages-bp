@@ -18,23 +18,24 @@
     </head>
     <body>
         <div id="container">
-            <header class="navbar">
-            <h3>gh-pages-bp</h3>
-            <nav>
-                <ul>
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>GitHub</a></li>
-                    <li><a>Twitter</a></li>
-                </ul>
-            </nav>
+            <header class="navbar oneHundred">
+                <h3>gh-pages-bp</h3>
+                <nav>
+                    <ul>
+                        <li><a>Home</a></li>
+                        <li><a>Docs</a></li>
+                        <li><a>IRC</a></li>
+                        <li><a>Mailing List</a></li>
+                        <li><a>GitHub</a></li>
+                        <li><a>Twitter</a></li>
+                    </ul>
+                </nav>
             </header>
             <section id="welcome">
                 <hgroup>
                     <h1 id="topHeader">gh-pages-bp</h1>
                     <h4>A responsive, beautiful boilerplate for your project's gh-pages page.</h4>
                 </hgroup>
-
             </section>
             <!-- <header class="ui red inverted page grid masthead segment">
 				<div class="center aligned column">
@@ -54,8 +55,8 @@
 				</div>
 			</header>
             -->
-			<div class="main-container">
-				<div class="main wrapper clearfix">
+			<div id="main-container">
+				<div class="main">
 	
 					<article>
 						<header>
@@ -82,6 +83,27 @@
 						<h3>aside</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
 					</aside>
+                    
+                    <article>
+						<header>
+							<h1>Code Highlighting</h1>
+							<p>Code highlighting is obviously important for most gh-pages sites because we developers need to display code as examples of how to (or how <em>not</em> to) do specific things with our products.</p>
+							<p>gh-pages-bp comes with Prettigy for code highlighting. By default, gh-pages-bp comes with the standard theme, as well as syntax highlighting for markup, CSS (plus CSS Extras), JavaScript, PHP (plus PHP Extras), CoffeeScript, SASS, SQL, and Ruby. If the language you want to use isn't on this list, check out the <a href="http://prismjs.com/download.html">Prism.js download page</a> where you can customize Prism to fit your needs.</p>
+							<p>Here's an example code block (it's from the Node.js documentation, with JavaScript highlighting): </p>
+						</header>
+						<section>
+							<h2>article section h2</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+						</section>
+						<section>
+							<h2>article section h2</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+						</section>
+						<footer>
+							<h3>article footer h3</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
+						</footer>
+					</article>
 	
 				</div> <!-- #main -->
 			</div> <!-- #main-container -->
@@ -93,12 +115,18 @@
 			</div>
 		</div>
 
-        <script src="./js/vendor/jquery-2.1.1.min.js"><\/script>
+        <script src="./js/vendor/jquery-2.1.1.min.js"></script>
         <script src="js/main.js"></script>
 
         <script src="js/jquery.fittext.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/shortcuts/waypoints-sticky.min.js"></script>
         <script type="text/javascript">
             jQuery("#topHeader").fitText();
+            $('.navbar').waypoint('sticky');
+            jQuery('#main-container').waypoint(function(direction) {
+              alert('Direction example triggered scrolling ' + direction);
+            });
         </script>
     </body>
 </html>
