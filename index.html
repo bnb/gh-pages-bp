@@ -1,132 +1,97 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>gh-pages-bp: A boilerplate for Github Pages</title>
-        <meta name="description" content="gh-pages-bp: A boilerplate for your project's gh-pages page.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link rel="stylesheet" href="css/flexible.min.css">
-        <link rel="stylesheet" href="css/animate.css">
+        <title>gh-pages-bp - a boilerplate for your gh-pages</title>
 
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <!-- External head resources -->
+
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:700|Roboto+Slab' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
+
+
+        <!-- Internal head resources -->
+
+        <link rel="stylesheet" href="node_modules\basscss\css\basscss.min.css">
+        <link rel="stylesheet" href="node_modules\basscss-utility-headings\index.css">
+        <link rel="stylesheet" href="./css/main.css">
     </head>
     <body>
-        <div id="container">
-            <header class="navbar oneHundred">
-                <h3>gh-pages-bp</h3>
-                <nav>
-                    <ul>
-                        <li><a>Home</a></li>
-                        <li><a>Docs</a></li>
-                        <li><a>IRC</a></li>
-                        <li><a>Mailing List</a></li>
-                        <li><a>GitHub</a></li>
-                        <li><a>Twitter</a></li>
-                    </ul>
-                </nav>
+        <section class="hero">
+            <header >
+                <div class="clearfix white bg-red">
+                  <a href="#!" class="h2 py1 px2 m0 left white sourcesanspro">gh-pages-bp</a>
+                  <div class="right">
+                    <a href="#!" class="button py2 m0 button-transparent sourcesanspro">Home</a>
+                    <a href="#!" class="button py2 m0 button-transparent sourcesanspro">Docs</a>
+                    <a href="#!" class="button py2 m0 button-transparent sourcesanspro">Community</a>
+                    <a href="#!" class="button py2 m0 button-transparent sourcesanspro">GitHub</a>
+                  </div>
+                  <div class="clearfix sm-hide"></div>
+                  <div class="overflow-hidden px2 py1">
+                    <input type="text" class="mb0 right fit field-dark" placeholder="Search">
+                  </div>
+                </div>
             </header>
-            <section id="welcome">
-                <hgroup>
-                    <h1 id="topHeader">gh-pages-bp</h1>
-                    <h4>A responsive, beautiful boilerplate for your project's gh-pages page.</h4>
-                </hgroup>
+
+            <section class="hero-body flex flex-column">
+                <header class="center px3 py4 black bg-red">
+                <h1 class="h00 h0-responsive regular sourcesanspro">gh-pages-bp</h1>
+                <h3 class="robotoslab">A simple, pretty gh-pages boilerplate.</p>
+                    <section class="hero-button-group">
+                        <a href="#!" class="button button-big red bg-black sourcesanspro">About</a>
+                        <a href="#!" class="button button-big red bg-black sourcesanspro">Docs</a>
+                        <a href="https://github.com/bnb/gh-pages-bp" class="button button-big black bg-red transparent sourcesanspro">GitHub</a>
+                    </section>
+                </header>
             </section>
-            <!-- <header class="ui red inverted page grid masthead segment">
-				<div class="center aligned column">
-					<hgroup>
-						<h1 class="animated fadeInDownBig ui center aligned huge header"><i class="icon github header-icon"></i></h1><h1 class="animated fadeInDownBig ui center aligned huge header">gh-pages-bp</h1>
-						<h5 class="animated fadeInUp ui">A responsive, beautiful boilerplate for your project's gh-pages page.</h5>
-					</hgroup>
-                    <div class="ui buttons">
-                        <div class="ui labeled icon button">
-                            <i class="github icon"></i>
-                            Download
-                        </div>
-                        <div class="or"></div>
-                        <div class="ui black button">Learn More</div>
-                    </div>
-					<br>
-				</div>
-			</header>
-            -->
-			<div id="main-container">
-				<div class="main">
-	
-					<article>
-						<header>
-							<h1>Code Highlighting</h1>
-							<p>Code highlighting is obviously important for most gh-pages sites because we developers need to display code as examples of how to (or how <em>not</em> to) do specific things with our products.</p>
-							<p>gh-pages-bp comes with Prettigy for code highlighting. By default, gh-pages-bp comes with the standard theme, as well as syntax highlighting for markup, CSS (plus CSS Extras), JavaScript, PHP (plus PHP Extras), CoffeeScript, SASS, SQL, and Ruby. If the language you want to use isn't on this list, check out the <a href="http://prismjs.com/download.html">Prism.js download page</a> where you can customize Prism to fit your needs.</p>
-							<p>Here's an example code block (it's from the Node.js documentation, with JavaScript highlighting): </p>
-						</header>
-						<section>
-							<h2>article section h2</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-						</section>
-						<section>
-							<h2>article section h2</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-						</section>
-						<footer>
-							<h3>article footer h3</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
-						</footer>
-					</article>
-	
-					<aside>
-						<h3>aside</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-					</aside>
-                    
-                    <article>
-						<header>
-							<h1>Code Highlighting</h1>
-							<p>Code highlighting is obviously important for most gh-pages sites because we developers need to display code as examples of how to (or how <em>not</em> to) do specific things with our products.</p>
-							<p>gh-pages-bp comes with Prettigy for code highlighting. By default, gh-pages-bp comes with the standard theme, as well as syntax highlighting for markup, CSS (plus CSS Extras), JavaScript, PHP (plus PHP Extras), CoffeeScript, SASS, SQL, and Ruby. If the language you want to use isn't on this list, check out the <a href="http://prismjs.com/download.html">Prism.js download page</a> where you can customize Prism to fit your needs.</p>
-							<p>Here's an example code block (it's from the Node.js documentation, with JavaScript highlighting): </p>
-						</header>
-						<section>
-							<h2>article section h2</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-						</section>
-						<section>
-							<h2>article section h2</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-						</section>
-						<footer>
-							<h3>article footer h3</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
-						</footer>
-					</article>
-	
-				</div> <!-- #main -->
-			</div> <!-- #main-container -->
-	
-			<div class="footer-container">
-				<footer class="wrapper">
-					<h3>footer</h3>
-				</footer>
-			</div>
-		</div>
+            <section class="center px2 py4">
+              <div class="flex mxn2 border-bottom bg-lighter-gray">
+                <div class="flex-auto p2">
+                  <h2 class="h1 mb0">Well-designed</h2>
+                  <p>gh-pages-bp is well designed from the beginning, so there's no need to fret over what people think. It allows you to just plug in your info and save.</p>
+                </div>
+                <div class="flex-auto p2">
+                  <h2 class="h1 mb0">Easy CLI (Soon!)</h2>
+                  <p>The CLI is a WIP. It will allow you to deploy gh-pages-bp easily and efficiently. Commands are designed to make things easy. No fuss, no muss.</p>
+                </div>
+                <div class="flex-auto p2">
+                  <h2 class="h1 mb0">Open-Source Software</h2>
+                  <p>gh-pages-bp is an OSS project, and it's meant to give something back to the community that has already given so much.</p>
+                </div>
+              </div>
 
-        <script src="./js/vendor/jquery-2.1.1.min.js"></script>
-        <script src="js/main.js"></script>
+              <div class="flex mxn2">
+                <div class="flex-auto p2">
+                  <h2 class="h1 mb0">BassCSS: Power Awaits</h2>
+                  <p>BassCSS is the CSS framework behind the lovely design of gh-pages-bp. It's extremely powerful, but also simple - not bloated.</p>
+                </div>
+                <div class="flex-auto p2">
+                  <h2 class="h1 mb0">Flexbox</h2>
+                  <p>Flexbox, flexbox, flexbox. Flexbox is an amazing new CSS property that allows <span class="italic">extreme</span> control over the positioning of elements. It's a must have.</p>
+                </div>
+                <div class="flex-auto p2">
+                  <h2 class="h1 mb0">Color Combinations</h2>
+                  <p>BassCSS uses mrmrs' <a href="https://github.com/mrmrs/colors">colors</a> as default colors for styling. This extension is extremely useful, and gives real creedence to using regular color names, albiet in the Markup.</p>
+                </div>
+                <div class="flex-auto p2">
+                  <h2 class="h1 mb0">Optional Modules</h2>
+                  <p>BassCSS has <a href="http://www.basscss.com/docs/optional-modules/">optional modules</a> that allow you to customize your gh-pages site even more. You should <span class="italics">definitely</span> look into these if you want to add more functionality to gh-pages-bp.</p>
+                </div>
+              </div>
+            </section>
+        </section>
+        <!-- Java to the scripts -->
 
-        <script src="js/jquery.fittext.js"></script>
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/shortcuts/waypoints-sticky.min.js"></script>
-        <script type="text/javascript">
-            jQuery("#topHeader").fitText();
-            $('.navbar').waypoint('sticky');
-            jQuery('#main-container').waypoint(function(direction) {
-              alert('Direction example triggered scrolling ' + direction);
-            });
-        </script>
+        <!-- If you want to highlight a syntax that's not default, you can mix your own flavor of highlight.js here: https://highlightjs.org/download/
+
+        For usage, see: https://highlightjs.org/usage/
+        -->
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+
     </body>
 </html>

@@ -1,9 +1,8 @@
 gh-pages-bp
 ===========
 
-A boilerplate for your products' gh-pages pages.
+A boilerplate for software gh-pages pages.
 ---------------------------------
-
-Status: Paused development. Pre-alpha right now.
-Explaination: I still fully plan to support gh-pages-bp, but I can't actively develop it right this moment. Soon.
-Ideas and Issues: See the GitHub issues. I'm going to try to keep all my ideas, plans, and problems in there.
+*Stage:* Pre-alpha.
+*Status:* In just a couple hours I got more of the code settled than I did in weeks of working on it off and on. The commit that adds this message is my first progress toward competing gh-pages-bp.
+*Ideas and Issues:* See the GitHub issues. I'm going to try to keep all my ideas, plans, and problems in there.
